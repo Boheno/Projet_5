@@ -1,0 +1,405 @@
+@media (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  header .logo-kasa {
+    width: 30px;
+    height: 5px;
+  }
+  header .header-nav a {
+    font-size: 10px;
+  }
+  .banner .About-content-banner img {
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+  }
+  .banner .text-banner {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    left: 20%;
+    top: 220px;
+  }
+  .logement-card figcaption {
+    width: 50%;
+  }
+  .about-collapse h2 {
+    font-size: 12px;
+  }
+  .about-collapse .collapse-title {
+    height: 20px;
+  }
+  .about-collapse .collapse-title i {
+    font-size: 14px;
+  }
+  .about-collapse .collapse-content.open p {
+    font-size: 12px;
+  }
+  .carousel-button-next {
+    font-size: 12px;
+    z-index: 1;
+    position: absolute;
+    color: white;
+  }
+  .title-logement {
+    font-size: 16px;
+  }
+  .host-logement {
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+  }
+  .host-logement img {
+    height: 50px;
+  }
+  .collapse-logement {
+    display: flex;
+    flex-direction: column;
+  }
+  .collapse-logement .description-logement {
+    width: 100%;
+  }
+  .collapse-logement .description-logement .collapse-title {
+    font-size: 12px;
+  }
+  .collapse-logement .equipment-logement {
+    width: 100%;
+  }
+  .collapse-logement .equipment-logement .collapse-title {
+    font-size: 12px;
+  }
+}
+.banner {
+  width: 95%;
+  height: 230px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.banner img {
+  object-fit: cover;
+  display: flex;
+  width: 90%;
+  height: 160px;
+  border-radius: 30px;
+}
+.banner .Home-content-banner {
+  filter: brightness(50%);
+  z-index: 0;
+  position: relative;
+}
+.banner .text-banner {
+  z-index: 1;
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  left: 34%;
+  top: 220px;
+}
+.banner .About-content-banner {
+  height: 230px;
+}
+
+.logements-container {
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.logement-card {
+  margin: 15px;
+  padding: 15px;
+  width: 350px;
+  height: 300px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+.logement-card img {
+  object-fit: cover;
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+  height: 300px;
+  z-index: 0;
+  position: absolute;
+  border-radius: 20px;
+}
+.logement-card figcaption {
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  color: white;
+  text-shadow: 1px 2px 2px black;
+  padding: 15px;
+  margin-top: 200px;
+  font-size: 16px;
+  width: 20%;
+}
+
+.error-body {
+  padding-bottom: 90px;
+  padding-top: 30px;
+}
+
+.error {
+  font-size: 200px;
+  color: #FF6060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  padding-bottom: 20px;
+}
+
+.error-text {
+  color: #FF6060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  padding-bottom: 20px;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+.about-collapse {
+  margin: 15px;
+}
+
+.collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.collapse-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  color: white;
+  border: none;
+  width: 75%;
+  height: 40px;
+  padding: 10px;
+  margin: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.collapse-title i {
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.collapse-content {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  opacity: 0;
+}
+.collapse-content p {
+  color: black;
+  font-size: 20px;
+}
+
+.collapse-content.open {
+  max-height: 500px;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.collapse-title span i {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.collapse-title span i.rotate {
+  transform: rotate(180deg);
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.carousel-container .carousel-image {
+  width: 100%;
+}
+.carousel-container img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 450px;
+  z-index: 0;
+  position: relative;
+}
+.carousel-container .carousel-button-next {
+  z-index: 1;
+  position: absolute;
+  left: 90%;
+  border: none;
+  background-color: transparent;
+  font-size: 200px;
+  color: white;
+}
+.carousel-container .carousel-button-next:hover {
+  cursor: pointer;
+}
+.carousel-container .carousel-button-prev {
+  z-index: 1;
+  position: absolute;
+  right: 90%;
+  border: none;
+  background-color: transparent;
+  font-size: 200px;
+  color: white;
+}
+.carousel-container .carousel-button-prev:hover {
+  cursor: pointer;
+}
+.carousel-container .carousel-counter {
+  z-index: 1;
+  position: absolute;
+  top: 65%;
+  color: white;
+}
+
+.title-logement {
+  color: #FF6060;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.title-logement p {
+  margin: 10px;
+}
+
+.host-logement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #FF6060;
+  font-size: 20px;
+}
+.host-logement .host-img {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 60px;
+  margin: 10px;
+  height: 80px;
+}
+
+.location-logement {
+  width: 200px;
+}
+
+.tags-logement ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+
+.tags-logement li {
+  background-color: #FF6060;
+  border-radius: 20px;
+  color: white;
+  width: 150px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-right: 5px;
+  display: flex;
+}
+
+.collapse-logement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.description-logement {
+  width: 40%;
+}
+
+.equipment-logement {
+  width: 40%;
+}
+
+.rating-stars {
+  color: #FF6060;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+:root {
+  font-family: Montserrat;
+}
+
+body:not(footer) {
+  margin: 0 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+header .logo-kasa {
+  width: 200px;
+  height: 80px;
+}
+header .header-nav {
+  display: flex;
+}
+header .header-nav a {
+  text-decoration: none;
+  margin: 20px;
+  font-size: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 150px;
+  width: 100%;
+  margin: 0px;
+}
+footer img {
+  width: 100px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 10px;
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,27 @@
+.carousel-container {
+
+    img{ 
+    object-fit: fill;
+    border-radius: 10px;
+    @include size (80%, 400px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+   
+}
+.title-logement {
+    color: $color-main;
+    font-size: 40px;
+}
+
+.tags-logement{
+    display:flex;
+    
+    //justify-content: center;
+    
+    li{ 
+    @include tags;
+    }
+}}

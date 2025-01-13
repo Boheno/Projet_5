@@ -1,0 +1,95 @@
+@media (max-width: 768px) {
+    body{
+        max-width:768px;
+    }
+//header
+    header{
+        .logo-kasa{
+            @include size (30px, 5px);
+        }
+        .header-nav a{
+            font-size: 10px;
+        }
+    }//ne marche pas
+
+//Banner
+    .banner{
+        .About-content-banner{
+            img{ 
+                @include size (90%, 30px);
+                border-radius: 10px;
+                }
+        }
+        .text-banner{
+            color:white;
+            font-size: 16px;
+            position: absolute;
+            left: 20%;
+            top: 220px;
+        }
+    }
+
+//Home page
+.logement-card{
+    figcaption{
+        width:50%;
+    }//Ne marche pas
+}
+
+//Page à propos
+    
+    .about-collapse{
+        h2{
+            font-size: 12px;
+        }
+        .collapse-title{
+            height: 20px;
+            i{
+                font-size: 14px;
+            }
+        }
+        .collapse-content.open{
+            p {
+                font-size: 12px;// ne marche pas
+            }
+        }
+        
+    }
+
+//Page logement
+    .carousel-button-next{
+        font-size: 12px;
+        z-index: 1;
+        position:absolute;
+        color: white
+    }// ne marche pas
+    .title-logement{
+        font-size: 16px;
+    }
+    .host-logement{
+        font-size: 13px;
+        display:flex;
+        justify-content: flex-end;
+        width:auto;
+        img{
+            height: 50px;
+        }
+    }//changement position
+    .collapse-logement{
+        display: flex;
+        flex-direction: column;
+
+        .description-logement{
+            width: 100%;
+            .collapse-title{
+                    font-size: 12px;
+            }
+        }//changer disposition
+        .equipment-logement{
+            width: 100%;
+            .collapse-title{
+                font-size: 12px;
+            }
+        }
+    }
+}

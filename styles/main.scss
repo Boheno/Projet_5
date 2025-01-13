@@ -1,0 +1,52 @@
+@import "variables";
+@import "mediaquery";
+@import "banner";
+@import "cards";
+@import "error";
+@import "about";
+@import "logementCards";
+
+:root {
+    font-family: $police;
+  }
+body:not(footer){
+    margin: 0 40px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+
+    .logo-kasa{
+     @include size (200px, 80px);
+    }
+    .header-nav{
+      display:flex;
+    }
+  
+  .header-nav a{
+    text-decoration: none;
+    margin:20px;
+    font-size: 20px;
+  }
+}
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    height: 150px;
+    width: 100%;
+    margin: 0px;
+
+    img{
+        width:100px;
+        padding-bottom: 20px;
+    }
+    p{
+        font-size: 10px;
+        color: white;
+    }
+}

@@ -1,0 +1,17 @@
+.error-body{
+    padding-bottom:90px;
+    padding-top: 30px;
+}
+.error{
+    font-size: 200px;
+    color: $color-main;
+    @include position;
+}
+.error-text{
+    color: $color-main;
+    @include position;
+}
+a {
+    @include position;
+    color:black;
+}

@@ -1,0 +1,68 @@
+.banner {
+  width: 95%;
+  height: 160px;
+  margin: 50px;
+  align-items: center;
+}
+.banner img {
+  object-fit: cover;
+  width: 100%;
+  height: 160px;
+  border-radius: 30px;
+}
+.banner .Home-content-banner {
+  filter: brightness(50%);
+  z-index: 0;
+  position: relative;
+}
+.banner .text-banner {
+  z-index: 1;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  left: 33%;
+  top: 50%;
+}
+
+.logement-card {
+  display: flex;
+  width: 20%;
+  height: 20%;
+}
+
+:root {
+  font-family: Verdana,Geneva,Tahoma,sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+header .header-nav a {
+  text-decoration: none;
+  margin: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 130px;
+  margin: 0px;
+}
+footer img {
+  width: 100px;
+}
+footer p {
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

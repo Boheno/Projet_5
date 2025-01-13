@@ -1,0 +1,56 @@
+$police: Montserrat;
+$color-main: #FF6060;
+$margin: 15px;
+$color-text: black;
+
+@mixin size($w,$h){
+    width: $w;
+    height:$h;
+}
+@mixin cards {
+    margin: $margin;
+    padding:15px;
+    @include size (350px, 300px);
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-around;
+}
+@mixin button-collapse{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-main;
+    color: white;
+    border: none;
+    @include size (75%, 40px);
+    padding:10px;
+    margin: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+@mixin button-carousel{
+        border:none;
+        background-color: transparent;
+        font-size: 200px;
+        color: white;
+        &:hover{
+            cursor: pointer;
+        }
+}
+@mixin position{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding-bottom:20px;
+}
+@mixin tags {
+    background-color: $color-main;
+    border-radius: 20px;
+    color: white;
+    width:150px;
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+    list-style: none;
+}

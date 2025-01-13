@@ -1,0 +1,29 @@
+.banner{
+    @include size (95%, 230px);
+    margin:50px;
+    display: flex;
+    justify-content: center;
+    img{
+        object-fit: cover;
+        display: flex;
+        width:90%;
+        height: 160px;
+        border-radius: 30px;
+    }
+    .Home-content-banner{
+        filter: brightness(50%);
+        z-index: 0;
+        position:relative
+    }
+    .text-banner{
+        z-index: 1;
+        color:white;
+        font-size: 36px;
+        position: absolute;
+        left: 34%;
+        top: 220px;
+    }
+    .About-content-banner{
+        height: 230px;
+    }
+}
