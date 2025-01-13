@@ -1,6 +1,6 @@
-import Collapse from "./collapse"
+import Collapse from "./collapse.jsx"
 
-let aboutCollapse = () => {
+let About = () => {
     return(
         <div className="about-collapse">
             <Collapse title="Fiabilité">
@@ -18,4 +18,4 @@ let aboutCollapse = () => {
         </div>
     )
 }
-export default aboutCollapse
+export default About

@@ -7,8 +7,9 @@ import Footer from "./components/Footer.jsx"
 import Error from "./components/error.jsx"
 import Banner from "./components/Banner.jsx"
 import GenerateCards from "./components/cards.jsx"
-import aboutCollapse from "./components/about.jsx"
+//import aboutCollapse from "./components/about.jsx"
 import CardLogement from "./components/logement.jsx"
+//import Collapse from "./components/collapse.jsx"
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: (<><Header /> <Banner page="About" /> <About Collapse={aboutCollapse}/> <Footer /> </>),
+    element: (<><Header /> <Banner page="About" /> <About /> <Footer /> </>),
   },
   {
     path: "*",

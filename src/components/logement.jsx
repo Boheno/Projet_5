@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
-import Collapse from "./collapse";
-import Carousel from "./carousel";
-import RatingLogement from "./rating";
+import Collapse from "./collapse.jsx";
+import Carousel from "./carousel.jsx";
+import RatingLogement from "./rating.jsx";
 import Error from "./error";
 
 function CardLogement({ logements }) {

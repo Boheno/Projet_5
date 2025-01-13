@@ -281,7 +281,7 @@ a {
 .carousel-container .carousel-counter {
   z-index: 1;
   position: absolute;
-  top: 65%;
+  top: 550px;
   color: white;
 }
 
