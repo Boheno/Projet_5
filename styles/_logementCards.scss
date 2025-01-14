@@ -78,7 +78,7 @@
 
 .collapse-logement{ 
     display:flex;
-    flex-direction: row;
+    //flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -92,6 +92,6 @@
     color: $color-main;
     font-size: 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     width: 40%;
 }

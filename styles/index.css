@@ -36,39 +36,66 @@
   .about-collapse .collapse-content.open p {
     font-size: 12px;
   }
-  .carousel-button-next {
-    font-size: 12px;
-    z-index: 1;
-    position: absolute;
-    color: white;
-  }
-  .title-logement {
+  .carousel-container .carousel-button-prev {
     font-size: 16px;
   }
+  .title-logement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .title-logement p {
+    font-size: 22px;
+  }
   .host-logement {
-    font-size: 13px;
     display: flex;
     justify-content: flex-end;
-    width: auto;
+    width: 50%;
+  }
+  .host-logement .host-name {
+    font-size: 14px;
   }
   .host-logement img {
-    height: 50px;
+    height: 40px;
+  }
+  .tags-logement li {
+    font-size: 14px;
+  }
+  .rating-logement {
+    display: flex;
+    justify-content: flex-start;
+    width: 18%;
+  }
+  .rating-logement .rating-stars {
+    width: 100%;
   }
   .collapse-logement {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+  }
+  .collapse-logement .collapse-title {
+    width: 95%;
+    height: 30px;
+    border-radius: 10px;
+  }
+  .collapse-logement .collapse-title i {
+    font-size: 14px;
+  }
+  .collapse-logement .collapse-content.open p {
+    font-size: 14px;
   }
   .collapse-logement .description-logement {
     width: 100%;
   }
-  .collapse-logement .description-logement .collapse-title {
-    font-size: 12px;
+  .collapse-logement .description-logement h2 {
+    font-size: 14px;
   }
   .collapse-logement .equipment-logement {
     width: 100%;
   }
-  .collapse-logement .equipment-logement .collapse-title {
-    font-size: 12px;
+  .collapse-logement .equipment-logement h2 {
+    font-size: 14px;
   }
 }
 .banner {
@@ -322,7 +349,7 @@ a {
 
 .tags-logement li {
   background-color: #FF6060;
-  border-radius: 20px;
+  border-radius: 10px;
   color: white;
   width: 150px;
   padding: 5px;
@@ -335,7 +362,6 @@ a {
 
 .collapse-logement {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
 }
@@ -352,7 +378,7 @@ a {
   color: #FF6060;
   font-size: 20px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
   width: 40%;
 }
 
@@ -380,6 +406,9 @@ header .header-nav a {
   text-decoration: none;
   margin: 20px;
   font-size: 20px;
+}
+header .header-nav a :active {
+  text-decoration: underline;
 }
 
 footer {

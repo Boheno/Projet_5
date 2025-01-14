@@ -37,7 +37,6 @@
 }
 
 //Page à propos
-    
     .about-collapse{
         h2{
             font-size: 12px;
@@ -53,42 +52,83 @@
                 font-size: 12px;// ne marche pas
             }
         }
-        
     }
 
 //Page logement
-    .carousel-button-next{
-        font-size: 12px;
-        z-index: 1;
-        position:absolute;
-        color: white
-    }// ne marche pas
+    // .logement-content{
+    //     display:flex;
+    //     flex-direction: column-reverse;
+    // }
+
+    .carousel-container{ 
+        .carousel-button-prev{
+            font-size: 16px;
+        }// ne marche pas
+    }
+   
     .title-logement{
-        font-size: 16px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p{ 
+            font-size: 22px;
+        } 
     }
     .host-logement{
-        font-size: 13px;
         display:flex;
         justify-content: flex-end;
-        width:auto;
-        img{
-            height: 50px;
+        width:50%;
+        .host-name{
+            font-size: 14px;
         }
-    }//changement position
+        img{
+            height: 40px;
+        }
+    }//changement position sur la page
+
+    //Tags
+    .tags-logement li{
+        font-size: 14px;
+    }
+
+    .rating-logement{
+        display: flex;
+        justify-content: flex-start;
+        width:18%;
+        .rating-stars{
+            width:100%;
+        }
+    }
     .collapse-logement{
         display: flex;
+        justify-content: center;
         flex-direction: column;
+    
+        .collapse-title{
+            @include size (95%, 30px);
+            border-radius: 10px;
+            i{
+                font-size: 14px;
+            }
+        }
+        .collapse-content.open{
+            p {
+                font-size: 14px;// ne marche pas
+            }
+        }
 
         .description-logement{
             width: 100%;
-            .collapse-title{
-                    font-size: 12px;
+            
+
+            h2{
+                    font-size: 14px;
             }
         }//changer disposition
         .equipment-logement{
             width: 100%;
-            .collapse-title{
-                font-size: 12px;
+            h2{
+                font-size: 14px;
             }
         }
     }
