@@ -9,9 +9,7 @@
 :root {
     font-family: $police;
   }
-body:not(footer){
-    margin: 0 40px;
-}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -22,15 +20,14 @@ header{
     }
     .header-nav{
       display:flex;
+      .active-link{
+        text-decoration: underline;
+      }
     }
-  
   .header-nav a{
     text-decoration: none;
     margin:20px;
     font-size: 20px;
-    & :active{
-      text-decoration: underline;
-    }
   }
 }
 footer{
@@ -43,13 +40,10 @@ footer{
     height: 150px;
     width: 100%;
     margin: 0px;
-
     img{
         width:100px;
         padding-bottom: 20px;
     }
     p{
         font-size: 10px;
-        color: white;
-    }
-}
+        c

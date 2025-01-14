@@ -9,7 +9,14 @@
   header .header-nav a {
     font-size: 10px;
   }
-  .banner .About-content-banner img {
+  .banner {
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+  .banner img {
     width: 90%;
     height: 30px;
     border-radius: 10px;
@@ -386,10 +393,6 @@ a {
   font-family: Montserrat;
 }
 
-body:not(footer) {
-  margin: 0 40px;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -402,33 +405,15 @@ header .logo-kasa {
 header .header-nav {
   display: flex;
 }
+header .header-nav .active-link {
+  text-decoration: underline;
+}
 header .header-nav a {
   text-decoration: none;
   margin: 20px;
   font-size: 20px;
 }
-header .header-nav a :active {
-  text-decoration: underline;
-}
 
 footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: black;
-  color: white;
-  height: 150px;
-  width: 100%;
-  margin: 0px;
-}
-footer img {
-  width: 100px;
-  padding-bottom: 20px;
-}
-footer p {
-  font-size: 10px;
-  color: white;
-}
-
-/*# sourceMappingURL=index.css.map */
+  

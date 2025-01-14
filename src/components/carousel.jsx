@@ -12,14 +12,20 @@ function Carousel ({images}) {
 
 return (
     <div className="carousel-container">
+        {images.length > 1 && ( 
         <button onClick={prevImage} className="carousel-button-prev">&#8249;</button>
+        )}
         <div className="carousel-image">
             <img src={images[currentIndex]} alt={images.title} />
         </div>
+        {images.length > 1 && ( 
         <button onClick={nextImage} className="carousel-button-next">&#8250;</button>
+        )}
+        {images.length > 1 && ( 
         <div className="carousel-counter">
         {currentIndex + 1}/{images.length}
       </div>
+        )}
     </div>
 )
 }

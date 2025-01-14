@@ -14,12 +14,15 @@
 
 //Banner
     .banner{
-        .About-content-banner{
-            img{ 
-                @include size (90%, 30px);
-                border-radius: 10px;
-                }
+        @include size (90%, 30px);
+        display:flex;
+        justify-content: center;
+        margin:0px;
+        img{ 
+            @include size (90%, 30px);
+            border-radius: 10px;
         }
+        
         .text-banner{
             color:white;
             font-size: 16px;
