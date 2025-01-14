@@ -243,8 +243,9 @@ a {
 .collapse-content {
   width: 75%;
   display: flex;
-  justify-content: center;
+  padding: 5px;
   align-items: center;
+  background-color: #EFEFEF;
   max-height: 0;
   overflow: hidden;
   transform: translateY(-10px);
@@ -253,6 +254,11 @@ a {
 }
 .collapse-content p {
   color: black;
+  font-size: 20px;
+}
+.collapse-content li {
+  list-style: none;
+  display: flex;
   font-size: 20px;
 }
 
@@ -416,4 +422,22 @@ header .header-nav a {
 
 footer {
   display: flex;
-  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 150px;
+  width: 100%;
+  margin: 0px;
+}
+footer img {
+  width: 100px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 10px;
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

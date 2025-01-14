@@ -16,12 +16,10 @@ return (
         <div key={logement.id} className="logements">
             <div className="img-logement">
                 <Carousel images={logement.pictures} />
-                
             </div>
             <div className="logement-content">
             <div className="title-logement">
                 <p>{logement.title}</p>
-            
             <div className="host-logement">
             <p className="host-name">{logement.host.name}</p>
             <img className="host-img" src={logement.host.picture} />
@@ -30,7 +28,6 @@ return (
             <div className="location-logement">
                 <p>{logement.location}</p>
             </div>
-            
             <div className="tags-logement">
                 <ul>
                     {logement.tags.map((tag, index)=> (
@@ -42,7 +39,6 @@ return (
                 <RatingLogement rating={logement.rating} />
             </div>
             </div>
-
             <div className="collapse-logement">
             <div className="description-logement">
                 <Collapse title= "Description">
