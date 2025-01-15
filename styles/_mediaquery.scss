@@ -58,17 +58,17 @@
     }
 
 //Page logement
-    // .logement-content{
-    //     display:flex;
-    //     flex-direction: column-reverse;
-    // }
-
-    .carousel-container{ 
-        .carousel-button-prev{
-            font-size: 16px;
-        }// ne marche pas
+    .img-logement{ 
+        // img{
+        //     height: 200px;
+        // }
+        height: 200px;
     }
-   
+    .logement-content{
+        display:flex;
+       flex-direction: column;
+        gap: 15px;
+    }
     .title-logement{
         display:flex;
         flex-direction: row;
@@ -77,32 +77,42 @@
             font-size: 22px;
         } 
     }
+    // .location-logement{
+    //     order:2;
+    // }
+    //Tags
+    .tags-logement{
+        
+        .tags-logement li{
+            font-size: 14px;
+        }
+    }
+    .host-rating-container{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+       // align-items: center;
+       // width: 100%;
+       }
     .host-logement{
         display:flex;
-        justify-content: flex-end;
-        width:50%;
+        align-items: flex-end;
+       //width:100%;
         .host-name{
             font-size: 14px;
         }
         img{
             height: 40px;
         }
-    }//changement position sur la page
-
-    //Tags
-    .tags-logement li{
-        font-size: 14px;
     }
-
     .rating-logement{
         display: flex;
-        justify-content: flex-start;
-        width:18%;
-        .rating-stars{
-            width:100%;
-        }
+        //text-align: left;
+        align-items: center;
+       //width:100%;
     }
     .collapse-logement{
+        order:6;
         display: flex;
         justify-content: center;
         flex-direction: column;

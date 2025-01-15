@@ -43,8 +43,13 @@
   .about-collapse .collapse-content.open p {
     font-size: 12px;
   }
-  .carousel-container .carousel-button-prev {
-    font-size: 16px;
+  .img-logement {
+    height: 200px;
+  }
+  .logement-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
   .title-logement {
     display: flex;
@@ -54,10 +59,17 @@
   .title-logement p {
     font-size: 22px;
   }
+  .tags-logement .tags-logement li {
+    font-size: 14px;
+  }
+  .host-rating-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .host-logement {
     display: flex;
-    justify-content: flex-end;
-    width: 50%;
+    align-items: flex-end;
   }
   .host-logement .host-name {
     font-size: 14px;
@@ -65,18 +77,12 @@
   .host-logement img {
     height: 40px;
   }
-  .tags-logement li {
-    font-size: 14px;
-  }
   .rating-logement {
     display: flex;
-    justify-content: flex-start;
-    width: 18%;
-  }
-  .rating-logement .rating-stars {
-    width: 100%;
+    align-items: center;
   }
   .collapse-logement {
+    order: 6;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -325,6 +331,23 @@ a {
   color: white;
 }
 
+.title-location-tags-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.logement-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title-host-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .title-logement {
   color: #FF6060;
   font-size: 40px;
@@ -335,19 +358,34 @@ a {
   margin: 10px;
 }
 
+.host-rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .host-logement {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: end;
   color: #FF6060;
   font-size: 20px;
 }
 .host-logement .host-img {
   display: flex;
   justify-content: flex-end;
-  border-radius: 60px;
+  border-radius: 50%;
   margin: 10px;
   height: 80px;
+  object-fit: cover;
+}
+
+.rating-stars {
+  color: #FF6060;
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+  width: 40%;
 }
 
 .location-logement {
@@ -384,14 +422,6 @@ a {
 }
 
 .equipment-logement {
-  width: 40%;
-}
-
-.rating-stars {
-  color: #FF6060;
-  font-size: 20px;
-  display: flex;
-  justify-content: end;
   width: 40%;
 }
 

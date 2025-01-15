@@ -18,12 +18,9 @@ return (
                 <Carousel images={logement.pictures} />
             </div>
             <div className="logement-content">
+            <div className="title-location-tags-content">
             <div className="title-logement">
                 <p>{logement.title}</p>
-            <div className="host-logement">
-            <p className="host-name">{logement.host.name}</p>
-            <img className="host-img" src={logement.host.picture} />
-            </div>
             </div>
             <div className="location-logement">
                 <p>{logement.location}</p>
@@ -35,8 +32,15 @@ return (
                     ))} 
                 </ul>
             </div>
+            </div>
+            <div className="host-rating-container">
+            <div className="host-logement">
+            <p className="host-name">{logement.host.name}</p>
+            <img className="host-img" src={logement.host.picture} />
+            </div>
             <div className="rating-logement">
                 <RatingLogement rating={logement.rating} />
+            </div>
             </div>
             </div>
             <div className="collapse-logement">
