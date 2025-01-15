@@ -3,33 +3,15 @@
     max-width: 768px;
   }
   header .logo-kasa {
-    width: 30px;
-    height: 5px;
-  }
-  header .header-nav a {
-    font-size: 10px;
-  }
-  .banner {
-    width: 90%;
-    height: 30px;
     display: flex;
-    justify-content: center;
-    margin: 0px;
-  }
-  .banner img {
-    width: 90%;
-    height: 30px;
-    border-radius: 10px;
+    align-items: center;
   }
   .banner .text-banner {
-    color: white;
     font-size: 16px;
-    position: absolute;
-    left: 20%;
-    top: 220px;
+    left: 30%;
   }
   .logement-card figcaption {
-    width: 50%;
+    left: 30%;
   }
   .about-collapse h2 {
     font-size: 12px;
@@ -42,9 +24,6 @@
   }
   .about-collapse .collapse-content.open p {
     font-size: 12px;
-  }
-  .img-logement {
-    height: 200px;
   }
   .logement-content {
     display: flex;
@@ -95,11 +74,11 @@
   .collapse-logement .collapse-title i {
     font-size: 14px;
   }
-  .collapse-logement .collapse-content.open p {
-    font-size: 14px;
-  }
   .collapse-logement .description-logement {
     width: 100%;
+  }
+  .collapse-logement .description-logement .collapse-content.open {
+    width: 95%;
   }
   .collapse-logement .description-logement h2 {
     font-size: 14px;
@@ -110,20 +89,27 @@
   .collapse-logement .equipment-logement h2 {
     font-size: 14px;
   }
+  .collapse-logement .equipment-logement li {
+    font-size: 14px;
+  }
+  .collapse-logement .equipment-logement .collapse-content.open {
+    width: 95%;
+  }
 }
 .banner {
   width: 95%;
-  height: 230px;
-  margin: 50px;
+  height: 30%;
+  margin: 20px;
   display: flex;
   justify-content: center;
 }
 .banner img {
   object-fit: cover;
   display: flex;
-  width: 90%;
+  width: 100%;
   height: 160px;
   border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .banner .Home-content-banner {
   filter: brightness(50%);
@@ -138,20 +124,19 @@
   left: 34%;
   top: 220px;
 }
-.banner .About-content-banner {
-  height: 230px;
-}
 
 .logements-container {
   margin: 15px;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 95%;
   justify-content: center;
+  background-color: #F5F5F5;
+  border-radius: 20px;
 }
 
 .logement-card {
-  margin: 15px;
+  margin: 30px;
   padding: 15px;
   width: 350px;
   height: 300px;
@@ -178,6 +163,7 @@
   text-shadow: 1px 2px 2px black;
   padding: 15px;
   margin-top: 200px;
+  margin-left: 20px;
   font-size: 16px;
   width: 20%;
 }
@@ -237,7 +223,7 @@ a {
   width: 75%;
   height: 40px;
   padding: 10px;
-  margin: 15px;
+  margin-top: 15px;
   font-size: 16px;
   border-radius: 10px;
 }
@@ -251,7 +237,7 @@ a {
   display: flex;
   padding: 5px;
   align-items: center;
-  background-color: #EFEFEF;
+  background-color: #F5F5F5;
   max-height: 0;
   overflow: hidden;
   transform: translateY(-10px);
@@ -435,8 +421,8 @@ header {
   margin: 40px;
 }
 header .logo-kasa {
-  width: 200px;
-  height: 80px;
+  width: 17%;
+  height: 30%;
 }
 header .header-nav {
   display: flex;

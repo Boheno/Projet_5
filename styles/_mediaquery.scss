@@ -5,38 +5,28 @@
 //header
     header{
         .logo-kasa{
-            @include size (30px, 5px);
+            display: flex;
+            align-items: center;
         }
-        .header-nav a{
-            font-size: 10px;
-        }
+    //     .header-nav a{
+    //         font-size: 10px;
+    //     }
     }//ne marche pas
 
 //Banner
-    .banner{
-        @include size (90%, 30px);
-        display:flex;
-        justify-content: center;
-        margin:0px;
-        img{ 
-            @include size (90%, 30px);
-            border-radius: 10px;
-        }
-        
+    .banner{ 
         .text-banner{
-            color:white;
             font-size: 16px;
-            position: absolute;
-            left: 20%;
-            top: 220px;
+            left:30%;
         }
-    }
+    }    
+    //Ne marche pas
 
 //Home page
 .logement-card{
     figcaption{
-        width:50%;
-    }//Ne marche pas
+        left:30%;
+    }
 }
 
 //Page à propos
@@ -58,12 +48,12 @@
     }
 
 //Page logement
-    .img-logement{ 
-        // img{
-        //     height: 200px;
-        // }
-        height: 200px;
-    }
+    // .img-logement{ 
+    //     // img{
+    //     //     height: 200px;
+    //     // }
+    //     height: 200px;
+    // }
     .logement-content{
         display:flex;
        flex-direction: column;
@@ -124,16 +114,11 @@
                 font-size: 14px;
             }
         }
-        .collapse-content.open{
-            p {
-                font-size: 14px;// ne marche pas
-            }
-        }
-
         .description-logement{
             width: 100%;
-            
-
+            .collapse-content.open{
+                width:95%;
+            }
             h2{
                     font-size: 14px;
             }
@@ -142,6 +127,12 @@
             width: 100%;
             h2{
                 font-size: 14px;
+            }
+            li{
+                font-size: 14px;
+            }
+            .collapse-content.open{
+                width:95%;
             }
         }
     }

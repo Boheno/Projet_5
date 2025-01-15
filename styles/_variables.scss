@@ -2,13 +2,14 @@ $police: Montserrat;
 $color-main: #FF6060;
 $margin: 15px;
 $color-text: black;
+$back-ground-elements: #F5F5F5;
 
 @mixin size($w,$h){
     width: $w;
     height:$h;
 }
 @mixin cards {
-    margin: $margin;
+    margin: 30px;
     padding:15px;
     @include size (350px, 300px);
     box-sizing: border-box;
@@ -24,7 +25,7 @@ $color-text: black;
     border: none;
     @include size (75%, 40px);
     padding:10px;
-    margin: 15px;
+    margin-top: 15px;
     font-size: 16px;
     border-radius: 10px;
 }
