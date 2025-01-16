@@ -1,5 +1,5 @@
 .about-collapse{
-    margin:$margin;
+    margin:40px;
 }
 .collapse{
     display: flex;
@@ -20,10 +20,10 @@
     width:75%;
     display:flex;
     padding: 5px;
-    //margin-top: 0;
     align-items: center;
     background-color:$back-ground-elements;
     max-height: 0;
+    min-height: 30px;
     overflow: hidden;
     transform: translateY(-10px);
     transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;

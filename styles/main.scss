@@ -6,6 +6,10 @@
 @import "logement";
 @import "mediaqueries";
 
+body{
+  //height: 100%;
+  margin: 0px;
+}
 :root {
     font-family: $police;
   }

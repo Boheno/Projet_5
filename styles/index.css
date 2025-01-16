@@ -105,7 +105,7 @@ a {
 }
 
 .about-collapse {
-  margin: 15px;
+  margin: 40px;
 }
 
 .collapse {
@@ -142,6 +142,7 @@ a {
   align-items: center;
   background-color: #F5F5F5;
   max-height: 0;
+  min-height: 30px;
   overflow: hidden;
   transform: translateY(-10px);
   transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
@@ -330,20 +331,20 @@ a {
     left: 30%;
   }
   .about-collapse h2 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .about-collapse .collapse-title {
-    height: 20px;
+    height: 30px;
     width: 90%;
   }
   .about-collapse .collapse-title i {
-    font-size: 14px;
+    font-size: 16px;
   }
   .about-collapse .collapse-content.open {
     width: 90%;
   }
   .about-collapse .collapse-content.open p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .img-logement img {
     height: 200px;
@@ -395,10 +396,10 @@ a {
     align-items: center;
   }
   .collapse-logement {
-    order: 6;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0px 15px;
   }
   .collapse-logement .collapse-title {
     width: 95%;
@@ -433,6 +434,10 @@ a {
     width: 95%;
   }
 }
+body {
+  margin: 0px;
+}
+
 :root {
   font-family: Montserrat;
 }

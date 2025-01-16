@@ -9,7 +9,6 @@
             top:180px;
         }
     }
-
 //Home page
 .logements-container{
     background-color: transparent;
@@ -19,27 +18,25 @@
         left:30%;
     }
 }
-
 //Page à propos
     .about-collapse{
         h2{
-            font-size: 14px;
+            font-size: 16px;
         }
         .collapse-title{
-            height: 20px;
+            height: 30px;
             width:90%;
             i{
-                font-size: 14px;
+                font-size: 16px;
             }
         }
         .collapse-content.open{
             width:90%;
             p {
-                font-size: 12px;
+                font-size: 14px;
             }
         }
     }
-
 //Page logement
     .img-logement{ 
         img{
@@ -98,11 +95,10 @@
         }
        }
     .collapse-logement{
-        order:6;
         display: flex;
         justify-content: center;
         flex-direction: column;
-    
+        margin: 0px $margin;
         .collapse-title{
             @include size (95%, 30px);
             border-radius: 10px;
