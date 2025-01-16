@@ -2,25 +2,13 @@
     body{
         max-width:768px;
     }
-//header
-    header{
-        .logo-kasa{
-            display: flex;
-            align-items: center;
-        }
-        .header-nav a{
-           font-size: 10px;
-       }
-    }
-
 //Banner
     .banner{ 
         .text-banner{
-            font-size: 26px;
-            left:25%;
+            left:20%;
+            top:180px;
         }
-    }    
-    //Ne marche pas
+    }
 
 //Home page
 .logements-container{
@@ -35,17 +23,19 @@
 //Page à propos
     .about-collapse{
         h2{
-            font-size: 12px;
+            font-size: 14px;
         }
         .collapse-title{
             height: 20px;
+            width:90%;
             i{
                 font-size: 14px;
             }
         }
         .collapse-content.open{
+            width:90%;
             p {
-                font-size: 12px;// ne marche pas
+                font-size: 12px;
             }
         }
     }
@@ -62,7 +52,7 @@
             font-size: 100px;
         }
         .carousel-counter{
-            top:345px;
+            top:300px;
         }
      }
     .logement-content{
@@ -89,14 +79,14 @@
     .host-rating-container{
         display:flex;
         flex-direction: row-reverse;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
+        padding:0px 20px;
         .host-logement{
             display:flex;
             align-items: center;
             justify-content: flex-end;
-            width:50%;
             .host-name{
                 font-size: 14px;
             }
@@ -105,7 +95,6 @@
             display: flex;
             justify-content:flex-start;
             align-items: center;
-            width:50%;
         }
        }
     .collapse-logement{

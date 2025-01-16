@@ -13,10 +13,10 @@
 header{
     display: flex;
     justify-content: space-between;
-    margin: 40px;
+    margin: 30px;
 
     .logo-kasa{
-     @include size (17%, 30%);
+     @include size (200px, 30%);
     }
     .header-nav{
       display:flex;

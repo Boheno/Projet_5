@@ -1,9 +1,13 @@
+.img-logement{
+    padding:0px 40px;
+    
+}
 .carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width:100%;
-
+    
     .carousel-image{
         width:100%;
     }
@@ -18,37 +22,31 @@
     .carousel-button-next{
         z-index: 1;
         position: absolute;
-        left: 90%;
+        left: 85%;
         @include button-carousel;
     }
     .carousel-button-prev{
         z-index: 1;
         position: absolute;
-        right: 90%;
+        right: 85%;
         @include button-carousel;
     }
     .carousel-counter{
         z-index: 1;
         position: absolute;
-        top:550px;
+        top:570px;
         color:white;
     }
 }
 .title-location-tags-content{
     display:flex;
     flex-direction: column;
+    padding-left:40px;
 }
 .logement-content{
     display:flex;
-   // flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-}
-
-.title-host-container{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .title-logement {
     color: $color-main;
@@ -64,11 +62,13 @@
     display:flex;
     flex-direction: column;
     align-items: flex-end;
+    margin: 0px 20px;
 }
 .host-logement{
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: center;
+    margin-bottom:5px;
     color: $color-main;
     font-size: 20px;
 

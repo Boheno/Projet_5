@@ -10,7 +10,7 @@
   display: flex;
   width: 100%;
   height: 160px;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .banner .Home-content-banner {
@@ -23,8 +23,9 @@
   color: white;
   font-size: 36px;
   position: absolute;
+  box-sizing: border-box;
   left: 34%;
-  top: 220px;
+  top: 200px;
 }
 
 .logements-container {
@@ -171,6 +172,10 @@ a {
   transform: rotate(180deg);
 }
 
+.img-logement {
+  padding: 0px 40px;
+}
+
 .carousel-container {
   display: flex;
   align-items: center;
@@ -191,10 +196,10 @@ a {
 .carousel-container .carousel-button-next {
   z-index: 1;
   position: absolute;
-  left: 90%;
+  left: 85%;
   border: none;
   background-color: transparent;
-  font-size: 200px;
+  font-size: 160px;
   color: white;
 }
 .carousel-container .carousel-button-next:hover {
@@ -203,10 +208,10 @@ a {
 .carousel-container .carousel-button-prev {
   z-index: 1;
   position: absolute;
-  right: 90%;
+  right: 85%;
   border: none;
   background-color: transparent;
-  font-size: 200px;
+  font-size: 160px;
   color: white;
 }
 .carousel-container .carousel-button-prev:hover {
@@ -215,25 +220,20 @@ a {
 .carousel-container .carousel-counter {
   z-index: 1;
   position: absolute;
-  top: 550px;
+  top: 570px;
   color: white;
 }
 
 .title-location-tags-content {
   display: flex;
   flex-direction: column;
+  padding-left: 40px;
 }
 
 .logement-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.title-host-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .title-logement {
@@ -250,12 +250,14 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin: 0px 20px;
 }
 
 .host-logement {
   display: flex;
   flex-direction: row;
-  align-items: end;
+  align-items: center;
+  margin-bottom: 5px;
   color: #FF6060;
   font-size: 20px;
 }
@@ -317,16 +319,9 @@ a {
   body {
     max-width: 768px;
   }
-  header .logo-kasa {
-    display: flex;
-    align-items: center;
-  }
-  header .header-nav a {
-    font-size: 10px;
-  }
   .banner .text-banner {
-    font-size: 26px;
-    left: 25%;
+    left: 20%;
+    top: 180px;
   }
   .logements-container {
     background-color: transparent;
@@ -335,13 +330,17 @@ a {
     left: 30%;
   }
   .about-collapse h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .about-collapse .collapse-title {
     height: 20px;
+    width: 90%;
   }
   .about-collapse .collapse-title i {
     font-size: 14px;
+  }
+  .about-collapse .collapse-content.open {
+    width: 90%;
   }
   .about-collapse .collapse-content.open p {
     font-size: 12px;
@@ -356,7 +355,7 @@ a {
     font-size: 100px;
   }
   .img-logement .carousel-counter {
-    top: 345px;
+    top: 300px;
   }
   .logement-content {
     display: flex;
@@ -377,15 +376,15 @@ a {
   .host-rating-container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
+    padding: 0px 20px;
   }
   .host-rating-container .host-logement {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 50%;
   }
   .host-rating-container .host-logement .host-name {
     font-size: 14px;
@@ -394,7 +393,6 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 50%;
   }
   .collapse-logement {
     order: 6;
@@ -442,10 +440,10 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 40px;
+  margin: 30px;
 }
 header .logo-kasa {
-  width: 17%;
+  width: 200px;
   height: 30%;
 }
 header .header-nav {
