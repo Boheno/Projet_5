@@ -8,21 +8,24 @@
             display: flex;
             align-items: center;
         }
-    //     .header-nav a{
-    //         font-size: 10px;
-    //     }
-    }//ne marche pas
+        .header-nav a{
+           font-size: 10px;
+       }
+    }
 
 //Banner
     .banner{ 
         .text-banner{
-            font-size: 16px;
-            left:30%;
+            font-size: 26px;
+            left:25%;
         }
     }    
     //Ne marche pas
 
 //Home page
+.logements-container{
+    background-color: transparent;
+}
 .logement-card{
     figcaption{
         left:30%;
@@ -48,12 +51,20 @@
     }
 
 //Page logement
-    // .img-logement{ 
-    //     // img{
-    //     //     height: 200px;
-    //     // }
-    //     height: 200px;
-    // }
+    .img-logement{ 
+        img{
+        height: 200px;
+        }
+        .carousel-button-next{
+            font-size: 100px;
+        }
+        .carousel-button-prev{
+            font-size: 100px;
+        }
+        .carousel-counter{
+            top:345px;
+        }
+     }
     .logement-content{
         display:flex;
        flex-direction: column;
@@ -67,9 +78,7 @@
             font-size: 22px;
         } 
     }
-    // .location-logement{
-    //     order:2;
-    // }
+
     //Tags
     .tags-logement{
         
@@ -79,28 +88,26 @@
     }
     .host-rating-container{
         display:flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
-       // align-items: center;
-       // width: 100%;
-       }
-    .host-logement{
-        display:flex;
-        align-items: flex-end;
-       //width:100%;
-        .host-name{
-            font-size: 14px;
-        }
-        img{
-            height: 40px;
-        }
-    }
-    .rating-logement{
-        display: flex;
-        //text-align: left;
         align-items: center;
-       //width:100%;
-    }
+        width: 100%;
+        .host-logement{
+            display:flex;
+            align-items: center;
+            justify-content: flex-end;
+            width:50%;
+            .host-name{
+                font-size: 14px;
+            }
+        }
+        .rating-logement{
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            width:50%;
+        }
+       }
     .collapse-logement{
         order:6;
         display: flex;
@@ -116,13 +123,16 @@
         }
         .description-logement{
             width: 100%;
+            h2{
+                font-size: 14px;
+            }
             .collapse-content.open{
                 width:95%;
-            }
-            h2{
+                p{
                     font-size: 14px;
+                }
             }
-        }//changer disposition
+        }
         .equipment-logement{
             width: 100%;
             h2{
