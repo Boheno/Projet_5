@@ -18,7 +18,6 @@ return (
     </div>
 )
 }
-
 Collapse.propTypes ={
     title: PropTypes.string,
     children: PropTypes.node,

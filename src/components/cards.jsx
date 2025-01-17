@@ -24,5 +24,4 @@ GenerateCards.propTypes ={
         })
     )
 }
-
 export default GenerateCards

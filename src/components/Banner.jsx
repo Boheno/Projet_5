@@ -25,5 +25,4 @@ function Banner ({ page }) {
 Banner.propTypes = {
     page: PropTypes.string,
 }
-
 export default Banner

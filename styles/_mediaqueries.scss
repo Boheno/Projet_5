@@ -24,8 +24,7 @@
             font-size: 16px;
         }
         .collapse-title{
-            height: 30px;
-            width:90%;
+            @include size (90%, 30px);
             i{
                 font-size: 16px;
             }

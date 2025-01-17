@@ -81,7 +81,5 @@ CardLogement.propTypes = {
         })
     )
 }
-
-
 export default CardLogement;
 
