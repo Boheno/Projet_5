@@ -67,8 +67,11 @@
 
     //Tags
     .tags-logement{
-        
-        .tags-logement li{
+        ul{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        li{
             font-size: 14px;
         }
     }
@@ -129,5 +132,9 @@
                 width:95%;
             }
         }
+    }
+    .error{
+        font-size: 100px;
+        margin: 100px;
     }
 }

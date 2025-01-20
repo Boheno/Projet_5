@@ -99,7 +99,7 @@
 }
 .tags-logement li {
     @include tags;
-    margin-right: 5px;
+    margin: 5px;
     display:flex;
 }
 
