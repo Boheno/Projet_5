@@ -128,11 +128,13 @@ a {
   padding: 10px;
   margin-top: 15px;
   font-size: 16px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .collapse-title i {
   font-size: 30px;
-  padding-right: 20px;
+}
+.collapse-title .collapse-title span i {
+  transform-origin: center;
 }
 
 .collapse-content {
@@ -230,6 +232,9 @@ a {
   flex-direction: column;
   padding-left: 40px;
 }
+.title-location-tags-content p {
+  margin-top: 10px;
+}
 
 .logement-content {
   display: flex;
@@ -243,9 +248,6 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.title-logement p {
-  margin: 10px;
-}
 
 .host-rating-container {
   display: flex;
@@ -258,7 +260,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 5px;
+  margin: 10px 15px;
   color: #FF6060;
   font-size: 20px;
 }
@@ -271,12 +273,15 @@ a {
   object-fit: cover;
 }
 
-.rating-stars {
+.rating-logement {
+  margin: 15px;
+}
+.rating-logement .rating-stars {
   color: #FF6060;
-  font-size: 20px;
+  font-size: 28px;
   display: flex;
   justify-content: end;
-  width: 40%;
+  width: 100%;
 }
 
 .location-logement {
@@ -306,14 +311,28 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .description-logement {
-  width: 40%;
+  width: 100%;
+}
+.description-logement .collapse-title {
+  width: 90%;
+}
+.description-logement .collapse-content {
+  width: 89%;
+  padding: 10px;
 }
 
 .equipment-logement {
-  width: 40%;
+  width: 100%;
+}
+.equipment-logement .collapse-title {
+  width: 90%;
+}
+.equipment-logement .collapse-content {
+  width: 90%;
 }
 
 @media (max-width: 768px) {
@@ -330,18 +349,21 @@ a {
   .logement-card figcaption {
     left: 30%;
   }
+  .about-collapse {
+    margin: 20px 10px;
+  }
   .about-collapse h2 {
     font-size: 16px;
   }
   .about-collapse .collapse-title {
-    width: 90%;
+    width: 95%;
     height: 30px;
   }
   .about-collapse .collapse-title i {
     font-size: 16px;
   }
   .about-collapse .collapse-content.open {
-    width: 90%;
+    width: 95%;
   }
   .about-collapse .collapse-content.open p {
     font-size: 14px;
@@ -356,7 +378,7 @@ a {
     font-size: 100px;
   }
   .img-logement .carousel-counter {
-    top: 300px;
+    display: none;
   }
   .logement-content {
     display: flex;
@@ -381,15 +403,16 @@ a {
   .host-rating-container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    height: 70px;
     width: 100%;
-    padding: 0px 20px;
   }
   .host-rating-container .host-logement {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding: 0 30px 50px 0;
   }
   .host-rating-container .host-logement .host-name {
     font-size: 14px;
@@ -397,16 +420,16 @@ a {
   .host-rating-container .rating-logement {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    padding: 0 0 50px 10px;
+    margin: 0 0 0 10px;
   }
   .collapse-logement {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0px 15px;
   }
   .collapse-logement .collapse-title {
-    width: 95%;
+    width: 90%;
     height: 30px;
     border-radius: 10px;
   }

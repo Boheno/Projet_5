@@ -10,10 +10,11 @@
 }
 .collapse-title{
     @include button-collapse;
-
     i{
         font-size: 30px;
-        padding-right: 20px;
+    }
+    .collapse-title span i{
+        transform-origin: center;
     }
 }
 .collapse-content {

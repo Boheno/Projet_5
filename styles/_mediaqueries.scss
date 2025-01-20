@@ -20,17 +20,18 @@
 }
 //Page à propos
     .about-collapse{
+        margin: 20px 10px;
         h2{
             font-size: 16px;
         }
         .collapse-title{
-            @include size (90%, 30px);
+            @include size (95%, 30px);
             i{
                 font-size: 16px;
             }
         }
         .collapse-content.open{
-            width:90%;
+            width:95%;
             p {
                 font-size: 14px;
             }
@@ -48,7 +49,7 @@
             font-size: 100px;
         }
         .carousel-counter{
-            top:300px;
+            display:none;
         }
      }
     .logement-content{
@@ -78,14 +79,15 @@
     .host-rating-container{
         display:flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        width: 100%;
-        padding:0px 20px;
+        height: 70px;
+        width:100%;
         .host-logement{
             display:flex;
             align-items: center;
             justify-content: flex-end;
+            padding: 0 30px 50px 0;
             .host-name{
                 font-size: 14px;
             }
@@ -93,16 +95,16 @@
         .rating-logement{
             display: flex;
             justify-content:flex-start;
-            align-items: center;
+            padding:0 0 50px 10px;
+            margin:0 0 0 10px;
         }
        }
     .collapse-logement{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin: 0px $margin;
         .collapse-title{
-            @include size (95%, 30px);
+            @include size (90%, 30px);
             border-radius: 10px;
             i{
                 font-size: 14px;
