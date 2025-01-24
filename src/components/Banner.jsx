@@ -1,4 +1,3 @@
-
 import imageHome from "../assets/Image-source-1.png"
 import imageAbout from "../assets/Image-source-2.png"
 import PropTypes from "prop-types";
